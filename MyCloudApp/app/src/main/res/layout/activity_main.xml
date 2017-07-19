@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="1dp"
+    android:paddingRight="0.1dp"
+    android:paddingTop="0.1dp"
+    tools:context=".MainActivity"
+    android:background="#ffffff" >
+
+    <EditText
+        android:id="@+id/etHashtag"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:hint="Enter #Hastag here"
+        android:background="@drawable/rounded_border_edittext"
+        android:gravity="center" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/Okbutton"
+        android:layout_toRightOf="@+id/etHashtag"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="OK"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:theme="@style/AppTheme.Button"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/etHashtag"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@+id/Okbutton"
+        android:scaleType="fitXY"
+        app:srcCompat="@android:color/holo_blue_dark" />
+
+</RelativeLayout>
