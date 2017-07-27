@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hamblaster</string>
+    <string name="SignInTitle">Sign in!</string>
+    <string name="SignInButtonText">Log in</string>
+</resources>
